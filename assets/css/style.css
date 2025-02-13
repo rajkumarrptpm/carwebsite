@@ -77,10 +77,13 @@ header nav{
 .hero{
     /* background: url('../img/hero-2.jpg'); */
     position: relative;
+    height: 90vh;
+    overflow: hidden;
 }
 .hero img{
     width: 100%;
-    /* height: 98vh; */
+    height: 100%;
+    object-fit: cover;
 }
 .hero .hero-info{
     position: absolute;
@@ -89,7 +92,7 @@ header nav{
     top: 50%;
     left: 200px;
     transform: translateY(-50%);
-
+    z-index: 1;
     /* item align to center method 1 */
     /* top: 0;
     bottom: 0;
@@ -115,6 +118,12 @@ header nav{
     display: block;
    
 }
+.hero .hero-info p{
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 10px;
+}
 
 .hero .hero-info .cta-btn{
     background-color: #f38d07;
@@ -125,7 +134,7 @@ header nav{
     border-radius: 25px;
     transition: ease-out background-color 0.5s;
     
-    margin-top: 32px;
+    margin-top: 28px;
     display: inline-block;
 }
 

@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volkswagen</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
+    <!--  cta btn -> call to action button-->
 
     <!-- header starts -->
     <header>
@@ -31,17 +35,39 @@
 
     <!--hero starts -->
     <div class="hero">
-        <img src="./assets/img/hero-2.jpg" alt="">
+        <!-- Slider main container -->
+         <!-- ttps://swiperjs.com slider -->
+
+        <swiper-container class="mySwiper"  loop="true" speed="1000" effect="fade" 
+        centered-slides="true" autoplay-delay="5000" autoplay-disable-on-interaction="false" >
+            <swiper-slide>
+                <img src="./assets/img/hero-1.jpg" alt="">
+                
+            </swiper-slide>
+            <swiper-slide>
+                <img src="./assets/img/hero-2.jpg" alt="">
+            
+            </swiper-slide>
+            <swiper-slide>
+                <img src="./assets/img/hero-3.jpg" alt="">
+                
+            </swiper-slide>
+            
+        </swiper-container>
+        
         <div class="hero-info">
             <h1>
                 <span>Welcome to </span>
                 Volkswagen 
-                <span>India</span>
             </h1>
-            <a href="" class="cta-btn">Explore More</a><!-- call to action -->
-
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore reprehenderit deleniti id!</p>
+            <a href="" class="cta-btn">Explore more</a>
         </div>
     </div>
     <!-- hero ends -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
